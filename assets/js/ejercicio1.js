@@ -20,11 +20,14 @@ function concatenacionConFor() {
 
 console.log(`Ejercicio 1`);
 console.log(`Con metodo .join`);
+console.log(concatenacionJoin);
 console.log(concatenacionJoin());
 
 
 
 console.log(`Con metodo for`);
+
+console.log(concatenacionConFor);
 console.log(concatenacionConFor());
 
 

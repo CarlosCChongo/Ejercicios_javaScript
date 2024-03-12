@@ -27,5 +27,8 @@ function fncArregloEjercicio2conMap() {
 
 console.log(`Ejercicio 2`);
 console.log(`Datos del ejercicio "array [1, 2, 4, 5]" con "map()"`);
-console.log(`Datos ingresados ${arregloEjercicio2} con metodo .map (*2) = ${arregloEjercicio2conMap}`);
-console.log(`Datos ingresados ${arregloEjercicio2} con metodo .map (*2) = ${fncArregloEjercicio2conMap()}`);
+console.log(`Datos ingresados ${arregloEjercicio2} (*2) con metodo .map  = ${arregloEjercicio2conMap}`);
+console.log(" ");
+console.log("con una funcion for ");
+console.log(fncArregloEjercicio2conMap);
+console.log(`Datos ingresados ${arregloEjercicio2} (*2) con una funcion for  = ${fncArregloEjercicio2conMap()}`);

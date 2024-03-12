@@ -16,6 +16,7 @@ let people = ["Maria", "Dani", "Luis", "Juan", "Camila"];
 
 //1
 console.log(`Ejercicio 5.1`);
+console.log(`Escribir el comando para mostrar a todas las personas de la lista ["Maria", "Dani", "Luis", "Juan", "Camila"]`);
 function personas() {
     let peopleEjercicio51 = people.join([" , "]);
     return peopleEjercicio51
@@ -24,6 +25,8 @@ console.log(personas())
 
 //2
 console.log(`Ejercicio 5.2`);
+
+console.log(`Escribir el comando para quitar a "Dani"`);
 //mostramos el array sin dani
 let personasSinDani = people.filter(person => person !== "Dani");
 console.log(personasSinDani);
@@ -32,11 +35,14 @@ people.splice(1,1)
 
 //3
 console.log(`Ejercicio 5.3`);
+
+console.log(`Escribir el comando para quitar a "Juan"`);
 let personasSinJuan = people.filter(personasSinDani => personasSinDani !== "Juan");
 console.log(personasSinJuan);
 
 //4
 console.log(`Ejercicio 5.4`);
+console.log(`Escribir el comando para mover a Luis al inicio"`);
 function ejercicio4(){
     personasSinJuan.splice(1,1)
     let personasEjercicio54 = personasSinJuan;
@@ -46,15 +52,18 @@ function ejercicio4(){
 console.log(ejercicio4()) 
 //5
 console.log(`Ejercicio 5.5`);
+console.log(`Escribir el comando para agregar tu nombre al final del arreglo"`);
 personasSinJuan.push('Carlos');
 console.log(personasSinJuan)
 
 //6
 console.log(`Ejercicio 5.6`);
-for (i = 0; i < people.length; i++) {
-    console.log(people[i])
+
+console.log(`Romper el ciclo cuando en pantalla aparezca "Maria"`);
+for (i = 0; i < personasSinJuan.length; i++) {
+    console.log(personasSinJuan[i])
     
-    if (people[i] === "Maria") {
+    if (personasSinJuan[i] === "Maria") {
 
       break;
     }
@@ -63,9 +72,11 @@ for (i = 0; i < people.length; i++) {
 //7
 
 console.log(`Ejercicio 5.7`);
+console.log(`Escribe el comando que de el indexOf en el que se encuentre "Maria"`)
 console.log(`El indice de maria del arreglo ${people} es ${people.indexOf('Maria')}`)
 
 
 //end
+console.log(`Al final del ejercicio te debe quedar un arreglo con 4 nombres`)
 console.log(`final del ejercicio`);
 console.log(personasSinJuan)
